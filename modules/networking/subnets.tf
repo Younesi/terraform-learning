@@ -1,5 +1,5 @@
 # Public Subnets
-resource "aws_subnet" "public_subnect_az1" {
+resource "aws_subnet" "public_subnet_az1" {
   vpc_id                  = aws_vpc.vpc-test-default.id
   cidr_block              = var.public_subnet_cidr_az1
   availability_zone       = data.aws_availability_zones.available_zones.names[0]
@@ -10,7 +10,7 @@ resource "aws_subnet" "public_subnect_az1" {
   }
 }
 
-resource "aws_subnet" "public_subnect_az2" {
+resource "aws_subnet" "public_subnet_az2" {
   vpc_id                  = aws_vpc.vpc-test-default.id
   cidr_block              = var.public_subnet_cidr_az2
   availability_zone       = data.aws_availability_zones.available_zones.names[1]
