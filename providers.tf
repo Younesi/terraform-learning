@@ -1,4 +1,3 @@
-# configure aws provider to stablish connection between terraform and aws
 provider "aws" {
   region = var.region
   profile = "default"
